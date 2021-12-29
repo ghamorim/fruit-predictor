@@ -100,6 +100,10 @@ input {
 }
 
 .options-container > span {
+  color: var(--dark);
+}
+
+.upload-text {
   width: 377px;
   height: 55px;
 
@@ -107,6 +111,11 @@ input {
   line-height: 58px;
 
   color: var(--dark);
+}
+
+.image-formats {
+  font-size: 0.6rem;
+  margin-top: 4px;
 }
 
 .upload-button {
@@ -143,15 +152,11 @@ input {
     margin: 0px;
   }
 
-  main p {
-    padding: 20px;
-  }
-
   .options-container {
-    padding-bottom: 35px;
+    padding-bottom: 20px;
   }
 
-  .options-container > span {
+  .upload-text {
     font-size: 2.5rem;
   }
 
@@ -182,13 +187,7 @@ input {
 }
 
 @media screen and (max-width: 620px) {
-  .options-container {
-    display: block;
-    text-align: center;
-    padding-left: 0px;
-  }
-
-  .options-container > span {
+  .upload-text {
     display: none;
   }
 

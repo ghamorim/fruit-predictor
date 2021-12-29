@@ -59,7 +59,7 @@ function FruitPredictor() {
             ))}
           </div>
           <div className="options-container">
-            <span>Upload a photo:</span>
+            <span className="upload-text">Upload a photo:</span>
             <input
               accept=".png, .jpg, .jpeg, .bmp, .gif"
               type="file"
@@ -69,6 +69,7 @@ function FruitPredictor() {
             <button className="upload-button" onClick={handleClick}>
               Upload
             </button>
+            <span className="image-formats">PNG, JPG, JPEG or BMP</span>
           </div>
         </main>
       </div>      
