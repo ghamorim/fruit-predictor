@@ -22,10 +22,15 @@
 }
 
 .title {
-  margin-top: 7.33vh;
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 20px;
+  justify-content: center;
 }
 
 .title > h1 {
+  margin: auto;
   text-transform: uppercase;
 
   font-weight: bold;
@@ -33,6 +38,18 @@
   opacity: 85%;
 
   color: var(--dark);
+}
+
+.about {
+  min-width: 25px;
+  height: 25px;
+
+  cursor: pointer;
+}
+
+.about > img {
+  width: 100%;
+  height: 100%;
 }
 
 .content > main {
@@ -136,11 +153,26 @@ input {
   cursor: pointer;
 }
 
-@media screen and (max-width: 920px) {
-  .title {
-    margin: 20px;
-  }
+.modal-header {
+  font-size: 2rem;
+  color: var(--primary);
+}
 
+.modal-body {
+  margin: auto;
+  padding: 30px;
+  font-size: 1.2rem;
+}
+
+.modal-body > p {
+  padding-bottom: 20px;
+}
+
+.modal-body > ul {
+  padding-left: 15px;
+}
+
+@media screen and (max-width: 920px) {
   .title > h1 {
     font-size: 3rem;
   }
@@ -197,10 +229,6 @@ input {
 }
 
 @media screen and (max-width: 443px) {
-  .title {
-    margin: 20px 50px;
-  }
-
   main p {
     padding: 0px;
   }
