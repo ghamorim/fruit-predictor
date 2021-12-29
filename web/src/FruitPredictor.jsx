@@ -47,16 +47,16 @@ function FruitPredictor() {
   }
 
   const fruits = [
-    'Apple',
-    'Banana',
-    'Grape',
-    'Kiwi',
-    'Lemon',
-    'Orange',
-    'Papaya',
-    'Pineapple',
-    'Strawberry',
-    'Tomato'
+    'maçã',
+    'banana',
+    'uva',
+    'kiwi',
+    'limão siciliano',
+    'laranja',
+    'mamão papaia',
+    'abacaxi',
+    'morango',
+    'tomate'
   ]
 
   return (
@@ -65,14 +65,14 @@ function FruitPredictor() {
         <header className="title">
           <h1>Fruit Predictor</h1>
           <div className="about" onClick={() => setShow(true)}>
-            <img src={aboutIcon} alt="" />
+            <img src={aboutIcon} alt="Sobre" />
           </div>
           <Modal open={show} onClose={handleClose}>
             <header className="modal-header">
-              <b>About</b>
+              <b>Sobre</b>
             </header>
             <body className="modal-body">
-              <p>This predictor recognizes the following fruits:</p>
+              <p>O Fruit Predictor reconhece as seguintes frutas:</p>
               <ul className="fruits">
                 {fruits.map(fruit => (
                   <li>{fruit}</li>
@@ -92,16 +92,16 @@ function FruitPredictor() {
             </div>
             { loading ? (
               <p>
-                Predicting...
+                Realizando predição...
               </p>
             ) : (prediction && (
               <p>
-                It's <b>{prediction}</b>!
+                A fruta é: <b>{prediction}</b>!
               </p>
             ))}
           </div>
           <div className="options-container">
-            <span className="upload-text">Upload a photo:</span>
+            <span className="upload-text">Envie uma foto:</span>
             <input
               accept=".png, .jpg, .jpeg, .bmp, .gif"
               type="file"
@@ -109,7 +109,7 @@ function FruitPredictor() {
               onChange={handleChange}
             />
             <button className="upload-button" onClick={handleClick}>
-              Upload
+              Enviar
             </button>
             <span className="image-formats">PNG, JPG, JPEG or BMP</span>
           </div>

@@ -100,7 +100,7 @@ main p {
   font-weight: 300;
   font-size: 3rem;
   text-align: center;
-  padding-bottom: 15px;
+  padding: 10px;
 
   color: var(--dark);
 }
@@ -225,11 +225,5 @@ input {
 
   .panel-container {
     flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 443px) {
-  main p {
-    padding: 0px;
   }
 }
